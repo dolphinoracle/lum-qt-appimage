@@ -1,0 +1,8 @@
+
+when build script pauses:
+
+move live-usb-maker to /usr/bin (if necessary)
+copy in new desktop file to ./usr/share/applications and both 
+the desktop and icon to top level of build directory
+
+
