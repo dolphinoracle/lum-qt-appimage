@@ -17,7 +17,7 @@ MY_LIB_DIR=$(readlink -f "$MY_DIR/../cli-shell-utils")
    LIB_DIR="././local/lib/cli-shell-utils"
 
 export TEXTDOMAIN="cli-shell-utils"
-domain_dir="$MY_DIR/../cli-shell-utils/locale"
+domain_dir="././share/locale"
 test -d "$domain_dir" && export TEXTDOMAINDIR=$domain_dir
 
 #== BEGIN_CONFIG
