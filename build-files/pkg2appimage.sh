@@ -359,8 +359,16 @@ if [ ! -z "${_script}" ] ; then
   shell_execute $YAMLFILE _script
 fi
 
+
+###modification for lum-qt
 echo "copy in icon file and desktop file"
+cp ./usr/local/bin/* ./usr/bin
+cp ../live-usb-maker ./usr/bin
+cp ../live-usb-maker-qt.desktop ./usr/share/applications
+cp ../live-usb-maker-qt.desktop .
+cp ../drive-removable-media-usb.svg .
 read -n 1 -s -r -p 'press any key to close'
+###end modification
 
 DESKTOP=$(find . -name '*.desktop' | sort | head -n 1)
 
