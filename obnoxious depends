@@ -1,0 +1,11 @@
+for i in $(apt-cache depends libqt5gui5| grep -E 'Depends|Recommends|Suggests' | cut -d ':' -f 2,3 | sed -e s/'<'/''/ -e s/'>'/''/); do sudo apt-get download $i 2>>errors.txt; done
+for i in $(apt-cache depends libqt5dbus5| grep -E 'Depends|Recommends|Suggests' | cut -d ':' -f 2,3 | sed -e s/'<'/''/ -e s/'>'/''/); do sudo apt-get download $i 2>>errors.txt; done
+for i in $(apt-cache depends libqt5x11extras5| grep -E 'Depends|Recommends|Suggests' | cut -d ':' -f 2,3 | sed -e s/'<'/''/ -e s/'>'/''/); do sudo apt-get download $i 2>>errors.txt; done
+
+for i in $(apt-cache depends libpcre2-16-0| grep -E 'Depends|Recommends|Suggests' | cut -d ':' -f 2,3 | sed -e s/'<'/''/ -e s/'>'/''/); do sudo apt-get download $i 2>>errors.txt; done
+
+libqt5gui5
+libqt5dbus5
+liqt5x11extras5
+libpcre2-16-0
+libqt5core5a

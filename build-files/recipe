@@ -1,9 +1,0 @@
-
-run ./pkg2appimage.sh lum-qt.yml
-
-when build script pauses:
-
-move included live-usb-maker to .AppDir/usr/bin (if necessary)
-copy in new desktop file to .AppDir/usr/share/applications and both 
-the desktop and icon to top level of the .AppDir
-
