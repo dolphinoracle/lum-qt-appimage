@@ -1,4 +1,4 @@
-app: live-usb-maker-qt
+app: mx-live-usb-maker
 binpatch:  true
 
 ingredients:
@@ -11,7 +11,7 @@ ingredients:
     - libqt5widgets5
     - libqt5core5a
     - libpcre2-16-0
-    - live-usb-maker-qt
+    - mx-live-usb-maker
     - libdouble-conversion1
     - libxcb-xinerama0
     - libqt5x11extras5
@@ -24,12 +24,12 @@ ingredients:
     - util-linux
     - cpio
     - zlib1g
-  dist: stretch
+    - mx-viewer
+  dist: bullseye
   sources: 
-    - deb http://la.mxrepo.com/mx/repo/ stretch main non-free
-    - deb http://mxrepo.com/mx/repo/ stretch main non-free
-    - deb http://deb.debian.org/debian stretch main contrib non-free
-    - deb http://deb.debian.org/debian-security stretch/updates main contrib non-free
+    - deb http://la.mxrepo.com/mx/repo/ bullseye main non-free
+    - deb http://mxrepo.com/mx/repo/ bullseye main non-free
+    - deb http://deb.debian.org/debian bullseye main contrib non-free
 
 script:
 	- cp -R usr/local/lib/cli-shell-utils usr/lib/cli-shell-utils
