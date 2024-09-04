@@ -1,0 +1,36 @@
+app: mx-live-usb-maker
+binpatch:  true
+
+ingredients:
+  packages: 
+    - libgl1
+    - libglib2.0-0
+    - libxcb1
+    - libqt5gui5
+    - libqt5dbus5
+    - libqt5widgets5
+    - libqt5core5a
+    - libpcre2-16-0
+    - mx-live-usb-maker
+    - libdouble-conversion1
+    - libxcb-xinerama0
+    - libqt5x11extras5
+    - coreutils
+    - live-usb-maker
+    - cli-shell-utils
+    - syslinux
+    - syslinux-common
+    - extlinux
+    - util-linux
+    - cpio
+    - zlib1g
+    - mx-viewer
+  dist: bullseye
+  sources: 
+    - deb http://la.mxrepo.com/mx/repo/ bullseye main non-free
+    - deb http://mxrepo.com/mx/repo/ bullseye main non-free
+    - deb http://deb.debian.org/debian bullseye main contrib non-free
+
+script:
+	- cp -R usr/local/lib/cli-shell-utils usr/lib/cli-shell-utils
+	- cp usr/local/bin/* usr/bin    

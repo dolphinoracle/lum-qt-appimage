@@ -3,6 +3,8 @@ binpatch:  true
 
 ingredients:
   packages: 
+    - cryptsetup
+    - cryptsetup-bin
     - libgl1
     - libglib2.0-0
     - libxcb1
@@ -12,6 +14,7 @@ ingredients:
     - libqt5core5a
     - libpcre2-16-0
     - mx-live-usb-maker
+    - ntfs-3g
     - libdouble-conversion1
     - libxcb-xinerama0
     - libqt5x11extras5
@@ -25,6 +28,7 @@ ingredients:
     - cpio
     - zlib1g
     - mx-viewer
+    - pkexec
   dist: bullseye
   sources: 
     - deb http://la.mxrepo.com/mx/repo/ bullseye main non-free
